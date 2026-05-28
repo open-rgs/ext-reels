@@ -1,4 +1,4 @@
-// @open-rgs-ext/reels
+// @open-rgs/ext-reels
 //
 // Reference LuaExtension for open-rgs. Adds a `reels` module the math
 // can `require("reels")` to get reel-spin utilities.
@@ -11,7 +11,7 @@
 //
 // Wiring (in the integrator's boot file):
 //
-//   import { reels } from "@open-rgs-ext/reels";
+//   import { reels } from "@open-rgs/ext-reels";
 //   const math = await loadLuaMath("./maths/spin.lua", {
 //     extensions: [reels],
 //   });

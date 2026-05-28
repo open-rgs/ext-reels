@@ -1,4 +1,4 @@
--- @open-rgs-ext/reels — reel-spin utilities for open-rgs Lua maths.
+-- @open-rgs/ext-reels — reel-spin utilities for open-rgs Lua maths.
 --
 -- Conventions:
 --   • Strips are column-major: strips[col][index] (1-indexed)

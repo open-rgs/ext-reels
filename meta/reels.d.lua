@@ -1,6 +1,6 @@
 ---@meta
 --
--- lua-language-server type annotations for @open-rgs-ext/reels.
+-- lua-language-server type annotations for @open-rgs/ext-reels.
 -- Add this file's directory to the workspace.library setting in
 -- .luarc.json to get editor completion and type-checking on the
 -- Lua side.

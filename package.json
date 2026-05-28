@@ -1,5 +1,5 @@
 {
-  "name": "@open-rgs-ext/reels",
+  "name": "@open-rgs/ext-reels",
   "version": "0.2.0",
   "description": "Reel-spin utilities for open-rgs Lua maths. Reference LuaExtension implementation.",
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://gitlab.com/api/v4/projects/80565772/packages/npm/"
+    "provenance": true
   },
   "files": ["src", "meta", "README.md"],
   "keywords": ["open-rgs", "lua-extension", "rgs", "slot", "reels"],
@@ -24,16 +24,13 @@
     "typecheck": "tsc --noEmit",
     "test": "bun test"
   },
-  "dependencies": {
-    "@open-rgs/contract": "file:../open-rgs/packages/contract"
+  "peerDependencies": {
+    "@open-rgs/contract": "^0.3.0"
   },
   "devDependencies": {
-    "@open-rgs/core": "file:../open-rgs/packages/core",
+    "@open-rgs/contract": "^0.3.0",
+    "@open-rgs/core":     "^0.5.0",
     "@types/bun": "latest",
     "typescript": "^5.4.0"
-  },
-  "overrides": {
-    "@open-rgs/contract": "file:../open-rgs/packages/contract",
-    "@open-rgs/core":     "file:../open-rgs/packages/core"
   }
 }

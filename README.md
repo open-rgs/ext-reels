@@ -1,4 +1,4 @@
-# @open-rgs-ext/reels
+# @open-rgs/ext-reels
 
 Reel-spin utilities for open-rgs Lua maths. The reference implementation
 of the [`LuaExtension`](https://github.com/open-rgs/open-rgs/blob/main/packages/contract/src/index.ts)
@@ -18,14 +18,14 @@ contract — use it directly, or copy the shape to ship your own.
 ## Install
 
 ```bash
-bun add @open-rgs-ext/reels
+bun add @open-rgs/ext-reels
 ```
 
 ## Wire into a game
 
 ```ts
 import { loadLuaMath } from "@open-rgs/core";
-import { reels } from "@open-rgs-ext/reels";
+import { reels } from "@open-rgs/ext-reels";
 
 const math = await loadLuaMath("./maths/spin.lua", {
   extensions: [reels],
@@ -70,7 +70,7 @@ Add this to your game's `.luarc.json`:
 
 ```json
 {
-  "workspace.library": ["./node_modules/@open-rgs-ext/reels/meta"]
+  "workspace.library": ["./node_modules/@open-rgs/ext-reels/meta"]
 }
 ```
 

@@ -1,4 +1,4 @@
-// End-to-end smoke for @open-rgs-ext/reels:
+// End-to-end smoke for @open-rgs/ext-reels:
 //   • Verifies the extension installs into a real Lua VM via loadLuaMath
 //   • Runs reels.spin against a deterministic RNG and asserts the grid
 //   • Calls the native weighted_pick from Lua and asserts the bucket
@@ -23,7 +23,7 @@ function writeMath(body: string): string {
   return p;
 }
 
-describe("@open-rgs-ext/reels", () => {
+describe("@open-rgs/ext-reels", () => {
   test("exports a well-formed LuaExtension", () => {
     expect(reels.name).toBe("reels");
     expect(reels.version).toMatch(/^\d+\.\d+\.\d+$/);
